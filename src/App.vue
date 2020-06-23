@@ -39,15 +39,16 @@
   </div>
 </template>
 
+
 <script>
-
-
+import image from "./assets/Outdoor.jpg"
 export default {
+  
   name: 'App',
    data() {
       return {
         icon: '',
-        url: 'src/assets/Outdoor.jpg',
+        url: image,
         apiKey: '49a6eadbbac4095d97833c7907440549',
         baseUrl: 'https://api.openweathermap.org/data/2.5/',
         locInput: '',
@@ -137,9 +138,7 @@ export default {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
-    outline: none;
-    appearance: none;
-    border: none;
+   
   }
 
   #location {
